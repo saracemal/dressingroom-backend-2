@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
-  # resources :inspos
-  # resources :clothing_items
-  # resources :closets
-  # resources :users
+  #LOGIN ROUTES
+  get "/autologin", to: "auth#autologin"
 
   # USER ROUTES
   get "/users", to: "users#index"
