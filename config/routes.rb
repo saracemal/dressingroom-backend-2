@@ -5,9 +5,11 @@ Rails.application.routes.draw do
   # USER ROUTES
   get "/users", to: "users#index"
   post "/users", to: "users#create"
+  get "/users/:id", to: "users#show"
 
   # CLOSET ROUTES
   get "/closets", to: "closets#index"
+  get "/closets/:id", to: "closets#show"
   post "/closets", to: "closets#create"
   delete "/closets/:id", to: "closets#delete"
 

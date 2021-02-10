@@ -5,17 +5,17 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-# User.delete_all
-# Closet.delete_all
-# ClothingItem.delete_all
-# Inspo.delete_all
+User.delete_all
+Closet.delete_all
+ClothingItem.delete_all
+Inspo.delete_all
 
 User.create(name: "Sara")
 
 ## add more!! 
 Closet.create(user_id: 1, name: "Elevated Basics")
 Closet.create(user_id: 1, name: "Avant-Garde")
-# Closet.create(user_id: 1, name: "Jewelry and Accessories")
+Closet.create(user_id: 1, name: "Jewelry and Accessories")
 
 #brand, size (int), type, season, img_url
 ClothingItem.create(closet_id: 1, brand: "APC", size: 8, description: "sweatshirt", season: "fall/winter", img_url: "https://cdn.shopify.com/s/files/1/0007/0051/4360/products/COELJ-F27651PLA_00_1200x.jpg?v=1606786766")

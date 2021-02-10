@@ -15,7 +15,7 @@ class ClothingItemsController < ApplicationController
     end
 
     def delete
-        @clothing_item = ClothingItem.delete(params[:id])
+        @clothing_item = ClothingItem.find(params[:id]).destroy
         @clothing_item.destroy
         render json: @clothing_item
     end
