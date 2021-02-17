@@ -23,6 +23,6 @@ class ClothingItemsController < ApplicationController
     private
 
     def clothingitem_params
-        params.permit(:brand, :size, :description, :season, :img_url, :closet_id)
+        params.permit(:brand, :size, :description, :season, :img_url, :closet_id, :id)
     end
 end

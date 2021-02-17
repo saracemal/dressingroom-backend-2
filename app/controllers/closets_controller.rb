@@ -23,6 +23,6 @@ class ClosetsController < ApplicationController
     private
 
     def closet_params
-        params.permit(:name, :user_id)
+        params.permit(:name, :user_id, :id)
     end
 end

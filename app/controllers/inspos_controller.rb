@@ -23,6 +23,6 @@ class InsposController < ApplicationController
     private 
 
     def inspo_params
-        params.permit(:img_url, :caption, :user_id)
+        params.permit(:img_url, :caption, :user_id,)
     end
 end
